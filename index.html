@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Climate+Crisis&family=Roboto+Condensed&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>GIBO || LINKS</title>
+</head>
+
+<body>
+    <script src="https://kit.fontawesome.com/79c285c588.js" crossorigin="anonymous"></script>
+    <header>
+        <img src="https://i.imgur.com/EH9pajW.jpg" />
+        <span class="name">@Gibollino</span>
+        <span class="quote">The Real One is Here.</span>
+    </header>
+    <main>
+        <!--portfolio-->
+        <div class="box-link" onclick="window.open(portfolioLink,'mywindow');"><i
+                class="fa-solid fa-fire-flame-curved"></i>&nbsp;My Portfolio</div></a>
+        <!--github-->
+        <div class="box-link" onclick="window.open(githubLink,'mywindow');"><i
+                class="fa-brands fa-github-alt"></i>&nbsp;GitHub</div>
+        <!--instagram-->
+        <div class="box-link" onclick="window.open(instagramLink,'mywindow');"><i
+                class="fa-brands fa-instagram"></i>&nbsp;Instagram</div>
+        <!--steam-->
+        <div class="box-link" onclick="window.open(steamLink,'mywindow');"><i
+                class="fa-brands fa-steam"></i>&nbsp;Steam</div>
+        <!--codepen-->
+        <div class="box-link" onclick="window.open(codepenLink,'mywindow');"><i
+                class="fa-brands fa-codepen"></i>&nbsp;CodePen</div>
+        <!--onlyfans joke-->
+        <div onclick="fuckMe()" id="onlyFans" class="box-link"><i class="fa-solid fa-hand-fist"></i>&nbsp;My OnlyFans
+        </div>
+    </main>
+    <footer>
+        <span><strong>I can't pay Linktree.</strong></span>
+    </footer>
+    <script>
+        let portfolioLink = "https://yanez86.github.io/myport/index.html";
+        let githubLink = "https://github.com/Yanez86/";
+        let instagramLink = "https://www.instagram.com/zanocapa/";
+        let steamLink = "https://steamcommunity.com/profiles/76561197979878849";
+        let codepenLink = "https://codepen.io/Yanez86-the-bold";
+        let ofClicked = false;
+        function fuckMe() {
+            if (!ofClicked) {
+                document.getElementById("onlyFans").innerHTML = "LITTLE PERVERT";
+                ofClicked = true;
+            } else {
+                document.getElementById("onlyFans").innerHTML = '<i class="fa-solid fa-hand-fist"></i>&nbsp;My OnlyFans';
+                ofClicked = false;
+            }
+        }
+    </script>
+</body>
+
+</html>
